@@ -10,9 +10,9 @@ This test forks the mainnet at its current state and checks that execution of th
 
 [vote 63]: https://mainnet.lido.fi/#/lido-dao/0x2e59a20f205bb85a89c53f1936454680651e618e/vote/63/
 
-## Running the test
+## Running the check
 
-Edit the `networks.development.cmd_settings.fork` field in the `brownie-config.yml`, setting it to an archival ETH1 node endpoint. Then, run:
+Edit the `networks.development.cmd_settings.fork` key in the `brownie-config.yml`, setting it to an archival ETH1 node endpoint (a regular full node endpoint, e.g. Infura, might also work). Then, run:
 
 ```
 brownie test --network development

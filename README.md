@@ -12,7 +12,7 @@ This test forks the mainnet at its current state and checks that execution of th
 
 ## Running the check
 
-Edit the `networks.development.cmd_settings.fork` key in the `brownie-config.yml`, setting it to an archival ETH1 node endpoint (a regular full node endpoint, e.g. Infura, might also work). Then, run:
+Set the key `networks.development.cmd_settings.fork` in the `brownie-config.yml` to the ETH1 node endpoint (in case of any issues try an archival ETH1 node). Then, run:
 
 ```
 brownie test --network development
